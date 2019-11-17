@@ -40,7 +40,7 @@ public class Controller {
 	@PostMapping("/uploadProfile")
 	public String uploadRequirement(@RequestParam("id") Long id, @RequestBody Profile profile) {
 		Requirement req = repo.findById(id).get();
-		List<Profile> profiles = new ArrayList<Profile>();
+		List<Profile> profiles = req.getProfile();
 		profiles.add(profile);
 		req.setProfile(profiles);
 		if (repo.save(req) != null)
