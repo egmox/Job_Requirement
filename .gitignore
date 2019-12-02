@@ -6,10 +6,10 @@ target/
 
 ### STS ###
 .apt_generated
-.classpath
 .factorypath
 .project
 .settings
+added.txt
 .springBeans
 .sts4-cache
 
